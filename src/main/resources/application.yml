@@ -1,0 +1,25 @@
+server:
+  port: 8182
+
+spring:
+  application:
+    name: shedlock
+  datasource:
+    url: jdbc:postgresql://localhost:5433/shedlock
+    username: shedlock_cyber
+    password: shedlock453
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    change-log: classpath:liquibase/changelog-master.yml
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: feridmustafayev34@gmail.com
+    password: adri evhu pdhc jxlv
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enabled: true
+            required: true
